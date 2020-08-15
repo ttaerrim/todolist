@@ -1,12 +1,10 @@
 body {
     background-color: lavender;
+    color: #2c3e50;
 }
 
 .btn {
     cursor: pointer;
-}
-h1 {
-    color: #2c3e50;
 }
 
 .clicked {
