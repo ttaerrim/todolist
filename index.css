@@ -1,12 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+body,
+html {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 body {
     background-color: lavender;
-    color: #2c3e50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn {
-    cursor: pointer; 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* flex box 사용 */
+    justify-content: center;
+    /* margin: auto; */
+}
+
+
+div{
+    display: block;
+}
 .clicked {
     color: #7f8c8d;
 }
@@ -18,6 +67,8 @@ body {
 
 .showing {
     display: block;
+    font-size: 3em;
+    font-family: 'Song Myung', serif;
 }
 
 @keyframes fadeIn{
@@ -37,4 +88,36 @@ body {
     height: 100%;
     z-index: -1;
     animation: fadeIn 0.5s linear;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.todo-delBtn {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.clock {
+    font-size: 5em;
+}
+
+.nameNToDO {
+    font-family: 'Song Myung', serif;
+}
+
+.weather {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: grey;
+}
+
+.toDoList {
+    margin-bottom: 20px;
 }
