@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+            
 
 body,
 html {
@@ -19,7 +26,6 @@ body {
     justify-content: center;
 }
 
-
 h1,
 h2,
 h3,
@@ -29,19 +35,9 @@ h6 {
   margin: 0;
 }
 
-input {
-  background: none;
-  appearance: none;
-  border: 0;
-  font-size: 22px;
-  color: white;
-  border-bottom: 2px solid white;
+div{
+    display: block;
 }
-
-input::placeholder {
-  color: white;
-}
-
 .center{
     display: flex;
     flex-direction: column;
@@ -52,12 +48,21 @@ input::placeholder {
     /* margin: auto; */
 }
 
-
-div{
-    display: block;
+form {
+    padding: 1rem;
 }
-.clicked {
-    color: #7f8c8d;
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 20px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+input::placeholder {
+  color: white;
 }
 
 .form,
@@ -67,8 +72,9 @@ div{
 
 .showing {
     display: block;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Song Myung', serif;
+    text-shadow: 1px 1px 1px gray;
 }
 
 @keyframes fadeIn{
@@ -105,6 +111,7 @@ ul {
 
 .clock {
     font-size: 5em;
+    text-shadow: 1px 1px 1px gray;
 }
 
 .nameNToDO {
@@ -112,12 +119,21 @@ ul {
 }
 
 .weather {
+    font-family: 'MapoFlowerIsland';
     position: absolute;
     top: 0;
     right: 0;
-    color: grey;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+    margin: 5px 5px;
 }
 
 .toDoList {
     margin-bottom: 20px;
+    font-size: 18pt;
+}
+
+.notice {
+    font-size: 0.7rem;
+    font-weight: 100;
 }
